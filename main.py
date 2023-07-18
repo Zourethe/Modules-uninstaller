@@ -1,5 +1,5 @@
 '''
-                            Pip Libraries Uninstaller
+                                                    Pip Libraries Uninstaller
     
     This is the main file of the script, the one that will uninstall the libraries.
 
