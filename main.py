@@ -7,16 +7,16 @@
     Date: July, 17, 2023
 '''
 
-# Libraries imports.
+# Imports.
 from os import popen
 
-# Variables definition.
+# Variables.
 modules_list = popen('pip freeze')
 data = modules_list.read().split('\n')
 data.remove('')
 data_len = len(data)
 
-# Loop to uninstall each library.
+# Uninstall loop.
 for x in range(data_len):
     log = popen('pip uninstall {} -y'.format(data[x]))
     output = log.read()
